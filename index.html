@@ -1,0 +1,163 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <script>
+        function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // // Get all elements with class="tabcontent" and hide them
+        // tabcontent = document.getElementsByClassName("tabcontent");
+        // for (i = 0; i < tabcontent.length; i++) {
+        // tabcontent[i].style.display = "none";
+        // }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        } 
+        </script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+</script>
+
+        <div class="navbar">
+        <div class="tab">
+            <button class="tablink" onclick="openTab(event, 'contact')">contact</button>
+            <button class="tablink" onclick="openTab(event, 'resume')">résumé</button>
+            <button class="tablink" onclick="openTab(event, 'work')">portfolio</button>
+            <button class="tablink" onclick="openTab(event, 'about')">about</button>
+
+
+
+        </div>
+        </div>
+
+        <div id="about-block" class="container">
+        <div id="about" class="tabcontent">
+            <h1>Hi, I'm Josie.</h1>
+            <p>
+                Artist and aspiring web designer. <br>
+                Currently pursuing a Computer Science degree at Cal Poly Pomona. <br>
+                Strive to design visually pleasing user interfaces and 
+                create beautiful artwork. <br>
+                Check out some of my 
+                <a style="text-decoration: none; color: #d67171;" href="#">art</a>, 
+                read my
+                <a style="text-decoration: none; color: #d67171;"href="#">résumé</a>, or 
+                <a style="text-decoration: none; color: #d67171;" href="#">contact me</a>
+                <i class="far fa-smile"></i>
+            </p>
+        </div>  
+        </div>
+
+        <div id="work-block" class="container">
+                <button class="tablink" onclick="openTab(event, 'work')">view portfolio</button>
+            <div class="row">
+            <div class="col-xs-6" id="work-preview">
+                <div class="row" id="preview-row">
+                <div class="column">
+                    <img src="images/anne.png" alt="">
+                    <img src="images/clamshell.jpg" alt="">
+                    <img src="images/rose.png" alt="">
+                    <img src="images/body.png" alt="">
+
+            </div>
+                <div class="column">
+                    <img src="images/archer.png" alt="">
+                    <img src="images/nibble.png" alt="">
+                    <img src="images/makeup.png" alt="">
+                    <img src="images/pear.jpg" alt="">
+
+                </div>
+                <div class="column">
+                    <img src="images/Half_Half.png" alt="">
+                    <img src="images/watercolorscenary.jpg" alt="">
+                    <img src="images/Charcoal-Still-Life.jpg" alt="">
+                    <img src="images/ariel.png" alt="">
+                </div>
+            
+                <div class="column">
+                    <img src="images/eggs.jpg" alt="">
+                    <img src="images/basic_girl.png" alt="">
+                    <img src="images/passion.png" alt="">
+                    <img src="images/pocahontas.png" alt="">
+
+            </div>
+            </div>
+            </div>
+            <div class="col-xs-6">
+            <div id="work" class="tabcontent">
+                <div class="slideshow"></div>
+                <img class="mySlides img-responsive" src="images/anne.png" alt="">
+                <img class="mySlides img-responsive" src="images/body.png" alt="">
+                <img class="mySlides img-responsive" src="images/archer.png" alt="">
+                <img class="mySlides img-responsive" src="images/passion.png" alt="">
+                <img class="mySlides img-responsive" src="images/pear.jpg" alt="">
+                <img class="mySlides img-responsive" src="images/eggs.jpg" alt="">
+                <img class="mySlides img-responsive" src="images/clamshell.jpg" alt="">
+                <img class="mySlides img-responsive" src="images/fruitsofourlabor2.jpg" alt="">
+                <img class="mySlides img-responsive" src="images/Half_Half.png" alt="">
+                <img class="mySlides img-responsive" src="images/makeup.png" alt="">
+                <img class="mySlides img-responsive" src="images/basic_girl.png" alt="">
+                <img class="mySlides img-responsive" src="images/pocahontas.png" alt="">
+                <img class="mySlides img-responsive" src="images/surrealism.jpg" alt="">
+                <img class="mySlides img-responsive" src="images/rose.png" alt="">
+
+
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- <div id="resume-block" class="container">
+            <div id="resume" class="tabcontent">
+            
+            <h2>Résumé</h2>
+            <a href="#">Click to view PDF</a>
+            </div>
+        </div> -->
+
+        <!-- <div id="contact-block" class="container">
+        <div id="contact" class="tabcontent">
+            <div>
+            <h2>Contact Me!</h2>
+            
+        </div>
+        </div>
+        </div> -->
+    </body>
