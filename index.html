@@ -1,10 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">        <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
@@ -33,7 +35,7 @@
         } 
         </script>
 
-<script>
+        <script>
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -51,7 +53,7 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block";
 }
-</script>
+        </script>
 
         <div class="navbar">
         <div class="tab">
@@ -67,97 +69,185 @@ function showDivs(n) {
 
         <div id="about-block" class="container">
         <div id="about" class="tabcontent">
-            <h1>Hi, I'm Josie.</h1>
-            <p>
-                Artist and aspiring web designer. <br>
-                Currently pursuing a Computer Science degree at Cal Poly Pomona. <br>
-                Strive to design visually pleasing user interfaces and 
-                create beautiful artwork. <br>
-                Check out some of my 
-                <a style="text-decoration: none; color: #d67171;" href="#">art</a>, 
-                read my
-                <a style="text-decoration: none; color: #d67171;"href="#">résumé</a>, or 
-                <a style="text-decoration: none; color: #d67171;" href="#">contact me</a>
-                <i class="far fa-smile"></i>
-            </p>
+            <p style="float: left; font-size: 55px; text-align: center; margin-left: 30px">I'm Josie</p>
+
+                    <p style="font-size: 20px; color: #383838; float: right; margin-left: 30px; margin-top: 12px">
+                            Artist and aspiring web designer. <br>
+                            Currently pursuing a Computer Science degree at Cal Poly Pomona. <br>
+                            Strive to design visually pleasing user interfaces and 
+                            create beautiful artwork. <br>
+                            Check out some of my 
+                            <a style="text-decoration: none; color: #d67171;" href="#">art</a>, 
+                            read my
+                            <a style="text-decoration: none; color: #d67171;"href="#">résumé</a>, or 
+                            <a style="text-decoration: none; color: #d67171;" href="#">contact me</a>
+                            <i class="far fa-smile"></i>
+                      </p>
+            
         </div>  
         </div>
 
         <div id="work-block" class="container">
-                <button class="tablink" onclick="openTab(event, 'work')">view portfolio</button>
-            <div class="row">
-            <div class="col-xs-6" id="work-preview">
-                <div class="row" id="preview-row">
-                <div class="column">
-                    <img src="images/anne.png" alt="">
-                    <img src="images/clamshell.jpg" alt="">
-                    <img src="images/rose.png" alt="">
-                    <img src="images/body.png" alt="">
-
-            </div>
-                <div class="column">
-                    <img src="images/archer.png" alt="">
-                    <img src="images/nibble.png" alt="">
-                    <img src="images/makeup.png" alt="">
-                    <img src="images/pear.jpg" alt="">
-
+            <h1 style="color: #a59e9d; margin-top: 3%; margin-left: 3.5%; font-size: 48px;">Portfolio 
+            <a href="#" target="_blank" style="font-size: 16px; text-decoration: none; color: #efacbe;">click to view more</a></h1>
+            <div class="row" style="margin-top: 2%; margin-left: 2%; margin-right: 2%">
+                <div class="col-md-4">
+                  <div class="thumbnail" style="background:#292a2b; border:none">
+                    <a href="images/anne.png" style="text-decoration: none">
+                      <img src="images/anne.png" alt="Anne" style="width:100%">
+                      <div class="caption" style="color: white">
+                        <p>anne</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail" style="background:#292a2b; border:none">
+                    <a href="images/clamshell.jpg" style="text-decoration: none">
+                      <img src="images/clamshell.jpg" alt="Clamshell" style="width:100%">
+                      <div class="caption" style="color: white">
+                        <p>clamshell</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail"style="background:#292a2b; border:none">
+                    <a href="images/Half_Half.png" style="text-decoration: none">
+                      <img src="images/Half_Half.png" alt="Nature" style="width:100%">
+                      <div class="caption" style="color: white">
+                        <p>half n half</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div class="column">
-                    <img src="images/Half_Half.png" alt="">
-                    <img src="images/watercolorscenary.jpg" alt="">
-                    <img src="images/Charcoal-Still-Life.jpg" alt="">
-                    <img src="images/ariel.png" alt="">
+                <div class="col-md-4">
+                  <div class="thumbnail"style="background:#292a2b; border:none">
+                    <a href="images/body.png" style="text-decoration: none">
+                      <img src="images/body.png" alt="Serene" style="width:100%">
+                      <div class="caption" style="color: white">
+                        <p>serene</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail"style="background:none; border:none">
+                    <a href="images/archer.png" style="text-decoration: none">
+                      <img src="images/archer.png" alt="Archer" style="width: 100%; height: auto;">
+                      <div class="caption" style="color: white">
+                        <p>archer</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail"style="background:none; border:none">
+                    <a href="images/ariel.png" style="text-decoration: none">
+                      <img src="images/ariel.png" alt="Nature" style="width: 100%; height: auto;">
+                      <div class="caption" style="color: white">
+                        <p>ariel</p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-            
-                <div class="column">
-                    <img src="images/eggs.jpg" alt="">
-                    <img src="images/basic_girl.png" alt="">
-                    <img src="images/passion.png" alt="">
-                    <img src="images/pocahontas.png" alt="">
-
-            </div>
-            </div>
-            </div>
-            <div class="col-xs-6">
-            <div id="work" class="tabcontent">
-                <div class="slideshow"></div>
-                <img class="mySlides img-responsive" src="images/anne.png" alt="">
-                <img class="mySlides img-responsive" src="images/body.png" alt="">
-                <img class="mySlides img-responsive" src="images/archer.png" alt="">
-                <img class="mySlides img-responsive" src="images/passion.png" alt="">
-                <img class="mySlides img-responsive" src="images/pear.jpg" alt="">
-                <img class="mySlides img-responsive" src="images/eggs.jpg" alt="">
-                <img class="mySlides img-responsive" src="images/clamshell.jpg" alt="">
-                <img class="mySlides img-responsive" src="images/fruitsofourlabor2.jpg" alt="">
-                <img class="mySlides img-responsive" src="images/Half_Half.png" alt="">
-                <img class="mySlides img-responsive" src="images/makeup.png" alt="">
-                <img class="mySlides img-responsive" src="images/basic_girl.png" alt="">
-                <img class="mySlides img-responsive" src="images/pocahontas.png" alt="">
-                <img class="mySlides img-responsive" src="images/surrealism.jpg" alt="">
-                <img class="mySlides img-responsive" src="images/rose.png" alt="">
-
-
-                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-        </div>
-        </div>
-        </div>
+                <div class="col-md-4">
+                  <div class="thumbnail"style="background:none; border:none">
+                    <a href="images/passion.png"style="text-decoration: none">
+                      <img src="images/passion.png" alt="Passion" style="width: 100%; height: auto;">
+                      <div class="caption" style="color: white">
+                        <p>passion</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail"style="background:none; border:none">
+                    <a href="images/eggs.jpg"style="text-decoration: none">
+                      <img src="images/eggs.jpg" alt="Eggs" style="width: 100%; height: auto;">
+                      <div class="caption" style="color: white">
+                        <p>eggstatic</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="thumbnail"style="background:none; border:none">
+                    <a href="images/basic_girl.png"style="text-decoration: none">
+                      <img src="images/basic_girl.png" alt="Nature" style="width: 100%; height: auto;">
+                      <div class="caption" style="color: white">
+                        <p>smize</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>  
+        
         </div>
 
-        <!-- <div id="resume-block" class="container">
+        <div id="resume-block" class="container">
+            <h1 style="color: #75726b; margin-top: 3%; margin-left: 3.5%; font-size: 48px;">Résumé 
+            <a href="Documents/2018_Resume.pdf" target="_blank" 
+            style="font-size: 16px; text-decoration: none; color: #db839b;">click to view full</a></h1>
             <div id="resume" class="tabcontent">
-            
-            <h2>Résumé</h2>
-            <a href="#">Click to view PDF</a>
+                <div class="row">
+                <div class="col-sm-6">
+                    <div class="row" style="display: grid">
+                        <div class="col" id="first-column">
+                        <div class="row" id="skill"><h1 style="text-align: right; margin-right:30px">SKILLS</h1></div>
+                        <div class="row" id="skill-list">
+                        <div class="col">
+                            <ul>
+                                <li>UI/UX DESIGN</li>
+                                <li>JAVASCRIPT</li>
+                                <li>HTML/CSS/BOOTSTRAP</li>
+                                <li>ADOBE CREATIVE SUITE</li>
+                                <li>LINUX OS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                                
+                    <div class="col" id="second-column">
+                    <div class="row" id="experience"><h1 style="text-align: right; margin-right:30px">EXPERIENCE</h1></div>
+                    <div class="row" id="experience-list">
+                    <div class="col">
+                            <ul>
+                                <li>KEEBON [ECOMMERCE ASSOCIATE]</li>
+                                <li>MATH TUTOR [CONTRACT]</li>
+                                <li>HAPPY LEMON [SHIFT LEAD]</li>
+                            </ul>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm-6" >
+                    <div class="row" id="third-column" style="display: grid">
+                        <div class="row" id="experience"><h1 style="text-align: right; margin-right:30px">SOME WORK</h1></div>
+                            <div class="row" id="experience-list">
+                                <div class="col">
+                                    <ul>
+                                        <li>LINK TO WEBSITE 1</li>
+                                        <li>LINK TO WEBSITE 2</li>
+                                        <li>LINK TO WEBSITE 3</li>
+                                        <li>LINK TO WEBSITE 1</li>
+                                        <li>LINK TO WEBSITE 2</li>
+                                        <li>LINK TO WEBSITE 3</li>
+                                        <li>LINK TO WEBSITE 1</li>
+                                        <li>LINK TO WEBSITE 2</li>
+                                        <li>LINK TO WEBSITE 3</li>
+                                        <li>LINK TO WEBSITE 1</li>
+                                        <li>LINK TO WEBSITE 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+         
+                </div>
             </div>
-        </div> -->
+          
+        <div id="contact-block" class="container">
+            <h1 style="color: #a59e9d; margin-top: 3%; margin-left: 3.5%; font-size: 48px;">Contact Me
+            <a href="#" target="_blank" style="font-size: 16px; text-decoration: none; color: #efacbe;">if you want to</a></h1>
+          <div id="contact" class="tabcontent">
+                <img class="img-circle" src="images/Profile_Photo.png" alt="" 
+                style="height: 150px; margin-right: 10px; float: left;">
+                <p style="font-size: 20px; color: #a4d8db; margin-top: 5%;">
+                  I'm a regular gal who likes to draw. I love the desert and dessert.
+                  If you would like to talk me about anything, please feel free to email or text me. I won't bite.</p>
+          </div>
+        </div>
 
-        <!-- <div id="contact-block" class="container">
-        <div id="contact" class="tabcontent">
-            <div>
-            <h2>Contact Me!</h2>
-            
-        </div>
-        </div>
-        </div> -->
     </body>
+    </html>
