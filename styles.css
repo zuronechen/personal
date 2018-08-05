@@ -62,7 +62,7 @@ body{
 
 #about-block{
     background-image: url("images/joshua_tree.svg");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     height: 650px;
     top: 0;
@@ -91,13 +91,12 @@ body{
  } 
 
 #work-block{
-    /* background: #292a2b; */
-    background: #2c2c2d;
+    background: #564c46;
     height: auto;
     top: 0;
 }
 
-#work-block img{box-shadow: 3px 5px #292a2b}
+#work-block img{box-shadow: 3px 5px #4f4540}
 
 #work-block .col-md-2{padding: 0}
 
@@ -106,17 +105,24 @@ body{
 #work-block .thumbnail:hover{opacity:.5}
 
 #resume-block{
-    background: #4c4745;
+    background:linear-gradient(#d19292,#efb18b, #a4acb2);
     height: auto;
     top: 0;
 }
 
-#resume{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 4%;
-    margin-bottom: 7%;
+#resume .row .col-md-6 .padded{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
 }
+
+#resume .row .col-md-6 .padded p, ul{
+    color: white;
+    list-style: none;
+    font-size: 20px;
+}
+
 
 
 #first-column{
