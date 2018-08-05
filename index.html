@@ -9,6 +9,8 @@
         <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
 
@@ -55,128 +57,104 @@ function showDivs(n) {
 }
         </script>
 
-        <div class="navbar">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $("#myCarousel").carousel();
+        </script>
+
+        <div class="sidebar">
         <div class="tab">
-            <button class="tablink" onclick="openTab(event, 'contact')">contact</button>
-            <button class="tablink" onclick="openTab(event, 'resume')">résumé</button>
-            <button class="tablink" onclick="openTab(event, 'work')">portfolio</button>
             <button class="tablink" onclick="openTab(event, 'about')">about</button>
-
-
+            <button class="tablink" onclick="openTab(event, 'work')">portfolio</button>
+            <button class="tablink" onclick="openTab(event, 'resume')">skills</button>
+            <button class="tablink" onclick="openTab(event, 'contact')">contact</button>
 
         </div>
         </div>
 
         <div id="about-block" class="container">
         <div id="about" class="tabcontent">
-            <p style="float: left; font-size: 55px; text-align: center; margin-left: 30px">I'm Josie</p>
-
-                    <p style="font-size: 20px; color: #383838; float: right; margin-left: 30px; margin-top: 12px">
-                            Artist and aspiring web designer. <br>
-                            Currently pursuing a Computer Science degree at Cal Poly Pomona. <br>
-                            Strive to design visually pleasing user interfaces and 
-                            create beautiful artwork. <br>
-                            Check out some of my 
-                            <a style="text-decoration: none; color: #d67171;" href="#">art</a>, 
-                            read my
-                            <a style="text-decoration: none; color: #d67171;"href="#">résumé</a>, or 
-                            <a style="text-decoration: none; color: #d67171;" href="#">contact me</a>
-                            <i class="far fa-smile"></i>
-                      </p>
-            
+           <div class="row">
+             <div class="col-md-6" id="left">
+               <ul>
+                 <li style="color: #383030;font-size:10vh;">JOSIE CHEN</li>
+                 <li style="color: #544a4a; font-size: 6vh">ARTIST</li>
+                 <li style="color: #544a4a; font-size: 6vh">WEB DESIGNER</li>
+               </ul>
+             </div>
+             <div class="col-md-6" id="right">
+               <p style="color: white; font-size: 2vh">hello.<br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                remaining essentially unchanged.
+               </p>
+             </div>
+           </div>
         </div>  
         </div>
 
         <div id="work-block" class="container">
-            <h1 style="color: #a59e9d; margin-top: 3%; margin-left: 3.5%; font-size: 48px;">Portfolio 
-            <a href="#" target="_blank" style="font-size: 16px; text-decoration: none; color: #efacbe;">click to view more</a></h1>
-            <div class="row" style="margin-top: 2%; margin-left: 2%; margin-right: 2%">
-                <div class="col-md-4">
-                  <div class="thumbnail" style="background:#292a2b; border:none">
-                    <a href="images/anne.png" style="text-decoration: none">
-                      <img src="images/anne.png" alt="Anne" style="width:100%">
-                      <div class="caption" style="color: white">
-                        <p>anne</p>
-                      </div>
-                    </a>
+                  <div class="row">
+                     <h1 style="color: #a59e9d; text-align: center; font-size: 60px; margin-top: 3%">Portfolio</h1>
                   </div>
-                  <div class="thumbnail" style="background:#292a2b; border:none">
-                    <a href="images/clamshell.jpg" style="text-decoration: none">
-                      <img src="images/clamshell.jpg" alt="Clamshell" style="width:100%">
-                      <div class="caption" style="color: white">
-                        <p>clamshell</p>
+
+                  <div class="row" style="margin: 10%; margin-top: 3%">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                          <li data-target="#myCarousel" data-slide-to="3"></li>
+                      </ol>
+                      <div class="carousel-inner" role="listbox">
+                          <div class="item active">
+                              <div class="row">
+                                  <div class="col-md-4"><img class="img-responsive" src="images/anne.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/passion.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/body.png" alt=""></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="row">
+                                  <div class="col-md-4"><img class="img-responsive" src="images/Half_Half.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/ariel.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/basic_girl.png" alt=""></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="row">
+                                  <div class="col-md-4"><img class="img-responsive" src="images/pocahontas.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/nibble.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/zombie.png " alt=""></div>
+                              </div>
+                          </div>
+                          <div class="item">
+                              <div class="row">
+                                  <div class="col-md-4"><img class="img-responsive" src="images/archer.png" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/eggs.jpg" alt=""></div>
+                                  <div class="col-md-4"><img class="img-responsive" src="images/clamshell.jpg" alt=""></div>
+                              </div>
+                          </div>
                       </div>
-                    </a>
-                  </div>
-                  <div class="thumbnail"style="background:#292a2b; border:none">
-                    <a href="images/Half_Half.png" style="text-decoration: none">
-                      <img src="images/Half_Half.png" alt="Nature" style="width:100%">
-                      <div class="caption" style="color: white">
-                        <p>half n half</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="thumbnail"style="background:#292a2b; border:none">
-                    <a href="images/body.png" style="text-decoration: none">
-                      <img src="images/body.png" alt="Serene" style="width:100%">
-                      <div class="caption" style="color: white">
-                        <p>serene</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbnail"style="background:none; border:none">
-                    <a href="images/archer.png" style="text-decoration: none">
-                      <img src="images/archer.png" alt="Archer" style="width: 100%; height: auto;">
-                      <div class="caption" style="color: white">
-                        <p>archer</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbnail"style="background:none; border:none">
-                    <a href="images/ariel.png" style="text-decoration: none">
-                      <img src="images/ariel.png" alt="Nature" style="width: 100%; height: auto;">
-                      <div class="caption" style="color: white">
-                        <p>ariel</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="thumbnail"style="background:none; border:none">
-                    <a href="images/passion.png"style="text-decoration: none">
-                      <img src="images/passion.png" alt="Passion" style="width: 100%; height: auto;">
-                      <div class="caption" style="color: white">
-                        <p>passion</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbnail"style="background:none; border:none">
-                    <a href="images/eggs.jpg"style="text-decoration: none">
-                      <img src="images/eggs.jpg" alt="Eggs" style="width: 100%; height: auto;">
-                      <div class="caption" style="color: white">
-                        <p>eggstatic</p>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="thumbnail"style="background:none; border:none">
-                    <a href="images/basic_girl.png"style="text-decoration: none">
-                      <img src="images/basic_girl.png" alt="Nature" style="width: 100%; height: auto;">
-                      <div class="caption" style="color: white">
-                        <p>smize</p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>  
-        
+                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+              </div>
+            </div>
         </div>
 
         <div id="resume-block" class="container">
-            <h1 style="color: #75726b; margin-top: 3%; margin-left: 3.5%; font-size: 48px;">Résumé 
+            <h1 style="color: #75726b; margin-top: 3%; margin-left: 5.5%; font-size: 48px;">Skills 
             <a href="Documents/2018_Resume.pdf" target="_blank" 
-            style="font-size: 16px; text-decoration: none; color: #db839b;">click to view full</a></h1>
+            style="font-size: 16px; text-decoration: none; color: #db839b;">click to view my resume</a></h1>
             <div id="resume" class="tabcontent">
                 <div class="row">
                 <div class="col-sm-6">
@@ -241,8 +219,6 @@ function showDivs(n) {
             <h1 style="color: #a59e9d; margin-top: 3%; margin-left: 3.5%; font-size: 48px;">Contact Me
             <a href="#" target="_blank" style="font-size: 16px; text-decoration: none; color: #efacbe;">if you want to</a></h1>
           <div id="contact" class="tabcontent">
-                <img class="img-circle" src="images/Profile_Photo.png" alt="" 
-                style="height: 150px; margin-right: 10px; float: left;">
                 <p style="font-size: 20px; color: #a4d8db; margin-top: 5%;">
                   I'm a regular gal who likes to draw. I love the desert and dessert.
                   If you would like to talk me about anything, please feel free to email or text me. I won't bite.</p>

@@ -14,19 +14,33 @@ body{
     width: 100%;
 }
 
-
-.navbar{
-    padding: 12px 12px 20px 12px;
+.sidebar{
+    padding: 5px 5px 5px 8px;
     position: fixed;
-    width: 100%;
-    top: 0;
-    background: transparent; 
+    height: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
     border-radius: 0;
     z-index: 1;
 }
 
+.sidebar:hover{
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+@media screen and (max-width: 771px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar-superior {
+        display: block !important;
+    }
+}
+
+.tab{vertical-align: middle}
+
 .tablink{
-    display: inline-block;
+    display: block;
     text-decoration: none; 
     background: none;;
     border: none;
@@ -34,7 +48,6 @@ body{
     margin-right: 13px; 
     margin-top: 5px; 
     font-size: 16px;
-    float: right;
 }
 
 .tablink:hover{background: #4f4d4b; color: white; text-decoration: none; border: none}
@@ -47,40 +60,53 @@ body{
    margin-right: 30px;
 }
 
-
 #about-block{
     background-image: url("images/joshua_tree.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
     top: 0;
+    position: relative;
+}
+
+#about #left ul{
+    float: right;
+    list-style: none;
+    text-align: right;
+}
+
+#about #left ul li{
+    line-height: 100%;
+}
+
+#about #right p{
+    float: left;
 }
 
 #about{
-    position: relative;
-    float: left;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#about-container{
-    border: 2px solid #292a2b;
-    border-radius: 5px;
-}
+    transform: translate(-50%, -50%); 
+ } 
 
 #work-block{
-    background: #292a2b;
+    /* background: #292a2b; */
+    background: #2c2c2d;
     height: auto;
     top: 0;
 }
 
-#work-block img{
-    box-shadow: 3px 3px 3px 5px #252628;
-}
+#work-block img{box-shadow: 3px 5px #292a2b}
+
+#work-block .col-md-2{padding: 0}
+
+#work-block .thumbnail{background: none; border: none; margin: 1%}
+
+#work-block .thumbnail:hover{opacity:.5}
 
 #resume-block{
-    background: #ccd2e2;
+    background: #4c4745;
     height: auto;
     top: 0;
 }
@@ -95,21 +121,18 @@ body{
 
 #first-column{
     background: #e2b4b3;
-    box-shadow: 3px 4px #c5cad8;
     float: right;
     margin-bottom: 1%;
 }
 
 #second-column{
     background: #e89f7d;
-    box-shadow: 3px 4px #c5cad8;
     float: right;
     margin-bottom: 1%;
 }
 
 #third-column{
     background: #c68596;
-    box-shadow: 3px 4px #c5cad8;
     margin-left: 1%;
 }
 
