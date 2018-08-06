@@ -35,6 +35,7 @@ body{
     .sidebar-superior {
         display: block !important;
     }
+
 }
 
 .tab{vertical-align: middle}
@@ -54,33 +55,13 @@ body{
 
 .tablink.active{background: #4f4d4b; color: white; text-decoration: none; border: none}
 
-.profile-photo{
-   display: block;
-   float: left; 
-   margin-right: 30px;
-}
-
 #about-block{
     background-image: url("images/joshua_tree.svg");
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
     top: 0;
     position: relative;
-}
-
-#about #left ul{
-    float: right;
-    list-style: none;
-    text-align: right;
-}
-
-#about #left ul li{
-    line-height: 100%;
-}
-
-#about #right p{
-    float: left;
 }
 
 #about{
@@ -90,6 +71,33 @@ body{
     transform: translate(-50%, -50%); 
  } 
 
+ #about h1{line-height: 70%}
+
+ #about h1{
+     font-size: 80px;
+ }
+
+ .center-button{
+    vertical-align: middle;
+ }
+
+ #about ul li{display: inline; padding: 0}
+
+ #about button{
+     display: inline-block;
+     margin: 10px;
+     background: #564c46;
+     color: f4f4f4;
+     border: none;
+     border-radius: 15px;
+     font-size: 20px;
+     padding: 8px 16px 8px 16px;
+ }
+#about .flex {
+    display: flex;
+    justify-content: center;
+  }
+
 #work-block{
     background: #564c46;
     height: auto;
@@ -97,6 +105,8 @@ body{
 }
 
 #work-block img{box-shadow: 3px 5px #4f4540}
+
+#work-block h1{color: #f4f4f4; text-align: center; font-size: 60px; padding: 45px}
 
 #work-block .col-md-2{padding: 0}
 
@@ -110,20 +120,57 @@ body{
     top: 0;
 }
 
+#resume-block h1{color: #564c46; text-align: center; font-size: 60px; padding: 45px}
+
 #resume .row .col-md-6 .padded{
     background: rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    padding: 15px 15px 15px 20px;
     margin-bottom: 20px;
     border-radius: 6px;
 }
 
+#resume .row{margin-left: 15%; margin-right: 15%;}
+
+#resume .row .col-md-6 .padded ul{padding: 0}
+
 #resume .row .col-md-6 .padded p, ul{
-    color: white;
+    color: #f2eeed;
     list-style: none;
-    font-size: 20px;
+    font-size: 4vh;
 }
 
+#resume .row .col-md-6 .padded p{
+    color: #302d2d;
+}
 
+.progress{
+    border-radius: 0;
+    border: none;
+    background: #514846;
+}
+.progress-bar{   
+    text-align: left;
+    font-size: 3.4vh;
+    background: #635856;
+    border-radius: none;
+}
+
+@media screen and (max-width: 771px) {
+
+    #work-block h1{padding: 10px}
+
+    #resume-block h1{padding: 10px;}
+
+    #resume .row .col-md-6 .padded{
+        padding: 5px 5px 5px 10px;
+        margin-bottom: 5px;
+    }
+
+    #resume .row{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
 
 #first-column{
     background: #e2b4b3;
@@ -153,7 +200,7 @@ body{
 }
 
 #contact-block{
-    background: #292a2b;
+    background: #564c46;
     height: 500px;
     top:0;
 }
@@ -169,7 +216,4 @@ body{
 
 }
 
-.caption p{
-    font-size: 16px;
-    color: #a4d8db;
-}
+#contact-block h1{color: #f4f4f4; text-align: center; font-size: 60px; padding: 45px}
